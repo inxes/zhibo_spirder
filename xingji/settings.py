@@ -18,7 +18,7 @@ NEWSPIDER_MODULE = 'xingji.spiders'
 
 # 日志配置
 LOG_FILE = "./log/spiderlog_{}.txt".format(time.strftime("%Y_%m_%d", time.localtime()))
-LOG_LEVEL = "ERROR"
+LOG_LEVEL = "INFO"
 LOG_ENCODING = "utf-8"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

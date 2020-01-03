@@ -19,16 +19,16 @@ class XjGiftValueSpider(scrapy.Spider):
         }
     }
     start_urls = [
-        'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F333&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526283734765×tamp=1526283779296&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=333&categoryId=1&owid=333&platform=2&_=1526283833763',
-        'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fjuediqiusheng&url=https%3A%2F%2Fwww.quanmin.tv%2F25859562&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526363201737&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1392166960&categoryId=68&owid=1392166960&platform=2&_=1526363207254',
-        'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F28039633&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526363981148&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1916573306&categoryId=4&owid=1916573306&platform=2&_=1526364000091',
-        'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F9479324&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526364589536&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=9479324&categoryId=28&owid=9479324&platform=2&_=1526364595884',
-        'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F22300183&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526364853195&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1172299304&categoryId=10&owid=1172299304&platform=2&_=1526364904240',
+        # 'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F333&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526283734765×tamp=1526283779296&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=333&categoryId=1&owid=333&platform=2&_=1526283833763',
+        # 'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fjuediqiusheng&url=https%3A%2F%2Fwww.quanmin.tv%2F25859562&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526363201737&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1392166960&categoryId=68&owid=1392166960&platform=2&_=1526363207254',
+        # 'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F28039633&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526363981148&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1916573306&categoryId=4&owid=1916573306&platform=2&_=1526364000091',
+        # 'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F9479324&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526364589536&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=9479324&categoryId=28&owid=9479324&platform=2&_=1526364595884',
+        # 'https://www.quanmin.tv/shouyin_api/public/config/gift/pc?debug&cid=6&p=5&rid=-1&rcat=-1&uid=9240646&no=-1&net=0&screen=3&device=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y&refer=room&sw=1920&sh=1080&prepage=https%3A%2F%2Fwww.quanmin.tv%2Fgame%2Fall&url=https%3A%2F%2Fwww.quanmin.tv%2F22300183&viewid=j8jwbr5tym9irg1zq8jkk172p6bigangifp7cw2y1526347891914&timestamp=1526364853195&env=product&ch=quanmin&cv=quanmin_pc&sid=9488f0a515086ebe096ca4982e2757b7&uid=1172299304&categoryId=10&owid=1172299304&platform=2&_=1526364904240',
         'https://www.zhanqi.tv/api/static/v2.1/live/list/20/1.json',
-        'https://www.panda.tv/live_lists?status=2&token=545c94500c8ed951decfaa25d59df480&pageno=1&pagenum=120&order=top',
+        # 'https://www.panda.tv/live_lists?status=2&token=545c94500c8ed951decfaa25d59df480&pageno=1&pagenum=120&order=top',
         'http://share.egame.qq.com/cgi-bin/pgg_live_async_fcgi?param={"key":{"module":"pgg_live_read_ifc_mt_svr","method":"get_new_live_list","param":{"appid":"hot","page_num":1,"page_size":40,"tag_id":0,"tag_id_str":""}}}&app_info={"platform":4,"terminal_type":2,"egame_id":"egame_official","version_code":"9.9.9","version_name":"9.9.9"}&g_tk=&p_tk=&tt=1&_t=1526540987169',
         'http://api.vc.bilibili.com/room/v1/area/getRoomList?parent_area_id=2&cate_id=0&area_id=0&sort_type=online&page=1&page_size=30',
-        'http://configapi.longzhu.com/item/getallitems?lzv=1',
+        # 'http://configapi.longzhu.com/item/getallitems?lzv=1',
         'https://www.huomao.com/channels/channel.json?page=1&game_url_rule=all',
         'https://www.douyu.com/gapi/rkc/directory/0_0/1',
     ]
@@ -65,21 +65,21 @@ class XjGiftValueSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            if url.find('quanmin') > 0:
-                yield scrapy.Request(
-                    url,
-                    callback=self.quanmin_parse
-                )
+            # if url.find('quanmin') > 0:
+            #     yield scrapy.Request(
+            #         url,
+            #         callback=self.quanmin_parse
+            #     )
             if url.find('zhanqi') > 0:
                 yield scrapy.Request(
                     url,
                     callback=self.zhanqi_parse
                 )
-            if url.find('panda') > 0:
-                yield scrapy.Request(
-                    url,
-                    callback=self.panda_parse
-                )
+            # if url.find('panda') > 0:
+            #     yield scrapy.Request(
+            #         url,
+            #         callback=self.panda_parse
+            #     )
             if url.find('egame') > 0:
                 yield scrapy.Request(
                     url,
@@ -149,10 +149,13 @@ class XjGiftValueSpider(scrapy.Spider):
         )
 
     def zhanqi_detail(self, response):
+        logging.error("战旗的礼物详情方法..........")
         if deal_status(response):
             return
         info_json = re.findall(r'oPageConfig\.aRoomGiftList = (.+);', response.body.decode())[0]
         info_list = json.loads(info_json)
+        logging.error("战旗的礼物集合长度:{}".format(len(info_list)))
+
         for info in info_list:
             item = Xj_gift_value()
             item["name"] = info["name"]
@@ -162,48 +165,48 @@ class XjGiftValueSpider(scrapy.Spider):
             item["gift_id"] = info["id"]
             yield item
 
-    def panda_parse(self, response):
-        if deal_status(response):
-            return
-        info_dict = json.loads(response.body.decode())
-        code_url = urllib.parse.unquote(response.url)
-        page = re.findall(r'&pageno=(\d+)&', code_url)[0]
-        if info_dict["errno"] == 0:
-            items_lists = info_dict["data"]["items"]
-            if len(items_lists) == 0:
-                return
-            else:
-                for items in items_lists:
-                    if items["id"] != "":
-                        roomid = items["id"]
-                        gift_api = "https://mall.gate.panda.tv/ajax_gift_gifts_get?token=545c94500c8ed951decfaa25d59df480&roomid={}&rid=47048922"
-                        yield scrapy.Request(
-                            gift_api.format(int(roomid)),
-                            callback=self.panda_detail
-                        )
-                    else:
-                        continue
-        # 下一页
-        next_api = "https://www.panda.tv/live_lists?status=2&token=545c94500c8ed951decfaa25d59df480&pageno={}&pagenum=120&order=top"
-        yield scrapy.Request(
-            next_api.format(int(page) + 1),
-            callback=self.panda_parse
-        )
+    # def panda_parse(self, response):
+    #     if deal_status(response):
+    #         return
+    #     info_dict = json.loads(response.body.decode())
+    #     code_url = urllib.parse.unquote(response.url)
+    #     page = re.findall(r'&pageno=(\d+)&', code_url)[0]
+    #     if info_dict["errno"] == 0:
+    #         items_lists = info_dict["data"]["items"]
+    #         if len(items_lists) == 0:
+    #             return
+    #         else:
+    #             for items in items_lists:
+    #                 if items["id"] != "":
+    #                     roomid = items["id"]
+    #                     gift_api = "https://mall.gate.panda.tv/ajax_gift_gifts_get?token=545c94500c8ed951decfaa25d59df480&roomid={}&rid=47048922"
+    #                     yield scrapy.Request(
+    #                         gift_api.format(int(roomid)),
+    #                         callback=self.panda_detail
+    #                     )
+    #                 else:
+    #                     continue
+    #     # 下一页
+    #     next_api = "https://www.panda.tv/live_lists?status=2&token=545c94500c8ed951decfaa25d59df480&pageno={}&pagenum=120&order=top"
+    #     yield scrapy.Request(
+    #         next_api.format(int(page) + 1),
+    #         callback=self.panda_parse
+    #     )
 
-    def panda_detail(self, response):
-        if deal_status(response):
-            return
-        info_dict = json.loads(response.body.decode())
-        if info_dict["errno"] == 0:
-            gift_lists = info_dict["data"]["items"]
-            for gift in gift_lists:
-                item = Xj_gift_value()
-                item["name"] = gift["name"]
-                item["gift_id"] = gift["id"]
-                item["platform_id"] = self.panda_id
-                gift_cost = gift["price"]
-                item["price"] = round(int(gift_cost) / self.panda_conver, 2)
-                yield item
+    # def panda_detail(self, response):
+    #     if deal_status(response):
+    #         return
+    #     info_dict = json.loads(response.body.decode())
+    #     if info_dict["errno"] == 0:
+    #         gift_lists = info_dict["data"]["items"]
+    #         for gift in gift_lists:
+    #             item = Xj_gift_value()
+    #             item["name"] = gift["name"]
+    #             item["gift_id"] = gift["id"]
+    #             item["platform_id"] = self.panda_id
+    #             gift_cost = gift["price"]
+    #             item["price"] = round(int(gift_cost) / self.panda_conver, 2)
+    #             yield item
 
     def egame_parse(self, response):
         if deal_status(response):
@@ -213,6 +216,7 @@ class XjGiftValueSpider(scrapy.Spider):
         page = re.findall(r'"page_num":(\d+),"', code_url)[0]
         live_list = info_dict["data"]["key"]["retBody"]["data"]["live_data"]["live_list"]
         if len(live_list) == 0:
+            logging.error("企鹅电竞的礼物内容集合为空...............")
             return
         else:
             for live in live_list:
@@ -230,11 +234,17 @@ class XjGiftValueSpider(scrapy.Spider):
         )
 
     def egame_detail(self, response):
+        logging.error("企鹅电竞的礼物详情方法..........")
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
+
+        logging.error("企鹅电竞的礼物内容...............", info_dict)
         gift_list_a = info_dict["data"]["key"]["retBody"]["data"]["fans_guardian"]["list"]
         gift_list_b = info_dict["data"]["key"]["retBody"]["data"]["list"]
+
+        logging.error("企鹅电竞的礼物集合长度:{}  b:{}".format(len(gift_list_a), len(gift_list_b)))
+
         if len(gift_list_a) > 0:
             for gift_a in gift_list_a:
                 item = Xj_gift_value()
@@ -281,9 +291,12 @@ class XjGiftValueSpider(scrapy.Spider):
         )
 
     def bilibili_detail(self, response):
+        logging.error("B站的礼物详情方法..........")
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
+
+        logging.error("B站的礼物集合长度:{}".format(len(info_dict)))
         if info_dict["code"] == 0:
             data_list = info_dict["data"]
             if len(data_list) > 0:
@@ -297,9 +310,15 @@ class XjGiftValueSpider(scrapy.Spider):
                     yield item
 
     def longzhu_parse(self, response):
+
+        logging.error("龙珠的礼物详情方法..........")
+
         if deal_status(response):
             return
         gift_list = json.loads(response.body.decode())
+
+        logging.error("龙珠的礼物集合长度:{}".format(len(gift_list)))
+
         for gift in gift_list:
             item = Xj_gift_value()
             item["name"] = gift["title"]
@@ -336,9 +355,14 @@ class XjGiftValueSpider(scrapy.Spider):
         )
 
     def huomao_detail(self, response):
+
+        logging.error("火猫的礼物详情方法..........")
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
+
+        logging.error("火猫的礼物集合长度:{}, 内容:{}".format(len(info_dict),info_dict))
+
         if info_dict["code"] == 200:
             gift_list = info_dict["data"]["giftInfo"]
             for gift in gift_list:
@@ -382,9 +406,15 @@ class XjGiftValueSpider(scrapy.Spider):
         )
 
     def douyu_detail(self, response):
+
+        logging.error("斗鱼的礼物详情方法..........")
+
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
+
+        logging.error("斗鱼的礼物集合长度:{},内容:{}".format(len(info_dict),info_dict))
+
         if info_dict["error"] == 0:
             gift_list = info_dict["data"]["gift"]
             for gift in gift_list:

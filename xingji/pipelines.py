@@ -198,6 +198,7 @@ class Xj_update_gamesPipeline(object):
         self.start_time = int(time.time())
 
     def process_item(self, item, spider):
+        logging.info("开始处理,更新各平台游戏分类............")
         result = self.select_db(item)
         if result == 0:
             # self.dbpool.runInteraction(self.insert_db, item)
