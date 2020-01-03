@@ -21,13 +21,13 @@ CREATE TABLE `xj_anchor_data` (
   `quotient` int(11) DEFAULT NULL COMMENT '百度指数',
   `danmu` int(11) DEFAULT NULL COMMENT '弹幕量',
   `category_id` bigint(20) DEFAULT NULL COMMENT '游戏分类id，查库',
-  `date` datetime DEFAULT NULL COMMENT '日期',
-  `add_time` datetime DEFAULT NULL COMMENT '添加时间',
-  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `date` varchar(20) DEFAULT NULL COMMENT '日期',
+  `add_time` int(11) DEFAULT NULL COMMENT '添加时间',
+  `update_time` int(11) DEFAULT NULL COMMENT '更新时间',
   `platform_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `xj_count_anchor_view` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -47,8 +47,8 @@ CREATE TABLE `xj_star` (
   `name` varchar(255) DEFAULT NULL COMMENT '主播名',
   `avatar` text COMMENT '头像',
   `live_url` text COMMENT '直播地址',
-  `unknow2` varchar(255) DEFAULT NULL,
-  `unknow3` varchar(255) DEFAULT NULL,
+  `m_weibo` varchar(255) DEFAULT NULL,
+  `tieba` varchar(255) DEFAULT NULL,
   `unknow4` varchar(255) DEFAULT NULL,
   `unknow5` varchar(255) DEFAULT NULL,
   `unknow6` varchar(255) DEFAULT NULL,
