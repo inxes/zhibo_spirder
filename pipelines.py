@@ -228,6 +228,10 @@ class Xj_update_gamesPipeline(object):
 
     def make_data(self, item):
         '''构造数据字符串'''
+        if item['name'] is None:
+            return
+        if item['name'].find('\''):
+            item['name'] = item['name'].replace('\'', "\\'")
         data_str = "(0,'{}','',0,0,{},{},1,0,'',''),".format(item["name"], int(time.time()), int(time.time()))
         return data_str
 
