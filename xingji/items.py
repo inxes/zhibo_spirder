@@ -33,7 +33,7 @@ class Xj_update_gamesItem(scrapy.Item):
 class Xj_view_liveItem(scrapy.Item):
     '''抓取开关播时间和在线人数'''
     anchor_id = scrapy.Field()  # 主播id:xj_anchor_live,xj_count_anchor_view
-    data = scrapy.Field()    # 直播日期:xj_anchor_live,xj_count_anchor_view
+    date = scrapy.Field()    # 直播日期:xj_anchor_live,xj_count_anchor_view
     view_num = scrapy.Field()   # 直播在线人数:xj_count_anchor_view
     update_time = scrapy.Field()    # 更新时间:xj_count_anchor_view
     start_time = scrapy.Field()    # 直播开始时间:xj_anchor_live
