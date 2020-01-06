@@ -4,6 +4,7 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
+import json
 import time
 import logging
 import pymysql
@@ -44,6 +45,7 @@ class Xj_starPipeline(object):
         self.start_time = int(time.time())
 
     def process_item(self, item, spider):
+
         view_num = self.select_view_num(item)
         if view_num is None:
             # self.dbpool.runInteraction(self.insert_db, item)
@@ -204,6 +206,7 @@ class Xj_update_gamesPipeline(object):
             # self.dbpool.runInteraction(self.insert_db, item)
             # 批量插入
             self.insert_list.append(self.make_data(item))
+            logging.info("更新平台分类信息的insert集合:{}".format(json.dumps(self.insert_list)))
         return item
 
     def close_spider(self, spider):
@@ -241,9 +244,11 @@ class Xj_update_gamesPipeline(object):
         sql_str = str()
         if len(self.insert_list) > 0:
             for i in self.insert_list:
-                sql_str += i
+                if i is not None:
+                    sql_str += i
             sql = "INSERT INTO xj_anchor_category VALUES %s" % sql_str
             sql_result = sql.rstrip(',')
+            logging.info("更新游戏分类最终sql{}".format(sql_result))
             self.cursor.execute(sql_result)
 
     def insert_db(self, cursor, item):

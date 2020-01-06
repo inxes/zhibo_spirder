@@ -79,7 +79,7 @@ class XjUpdateGamesSpider(scrapy.Spider):
                 )
 
     def douyu_parse(self, response):
-        logging.info("开始解析, 斗鱼的信息.................")
+        logging.info("开始解析, 斗鱼分类的信息.................")
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
@@ -124,7 +124,7 @@ class XjUpdateGamesSpider(scrapy.Spider):
             )
 
     def longzhu_get_game(self, response):
-        logging.info("开始处理, 龙珠game的信息.................")
+        logging.info("开始处理, 龙珠game分类的信息.................")
         if deal_status(response):
             return
         info_json = re.match(r"^_callbacks_\._1038oht\((.+)\)$", response.body.decode()).group(1)
@@ -137,7 +137,7 @@ class XjUpdateGamesSpider(scrapy.Spider):
                 yield item
 
     def egame_parse(self, response):
-        logging.info("开始解析, 企鹅电竞的信息.................")
+        logging.info("开始解析, 企鹅电竞分类的信息.................")
         if deal_status(response):
             return
         li_list = response.xpath("//ul[@class='livelist-mod']/li")
@@ -156,7 +156,7 @@ class XjUpdateGamesSpider(scrapy.Spider):
     #         yield item
 
     def zhanqi_parse(self, response):
-        logging.info("开始解析, 战旗的信息.................")
+        logging.info("开始解析, 战旗分类信息.................")
         if deal_status(response):
             return
         li_list = response.xpath("//ul[@id='game-list-panel']/li")
@@ -166,13 +166,14 @@ class XjUpdateGamesSpider(scrapy.Spider):
             yield item
 
     def bilibili_parse(self, response):
-        logging.info("开始解析, B站的信息.................")
+        logging.info("开始解析, B站分类的信息.................")
 
         if deal_status(response):
             return
         info_dict = json.loads(response.body.decode())
         data_list = info_dict["data"]
         # 若无内容，停止执行
+        logging.error("B站分类的data长度:{}".format(len(data_list)))
         if len(data_list) == 0:
             return
         # url解码
@@ -191,10 +192,13 @@ class XjUpdateGamesSpider(scrapy.Spider):
         )
 
     def huomao_parse(self, response):
-        logging.info("开始解析, 火猫的信息.................")
+        logging.info("开始解析, 火猫分类的信息.................")
         if deal_status(response):
             return
         div_list = response.xpath("//div[@id='gamelist']/div")
+
+        logging.error("火猫分类的data长度:{}".format(len(div_list)))
+
         for div in div_list:
             item = Xj_update_gamesItem()
             item["name"] = div.xpath(".//p/text()").extract_first()

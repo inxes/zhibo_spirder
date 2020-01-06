@@ -8,9 +8,11 @@ CREATE TABLE `xj_anchor_category` (
   `update_time` int(11) DEFAULT NULL,
   `unknow4` tinyint(4) DEFAULT NULL,
   `unknow5` tinyint(4) DEFAULT NULL,
+  `unknow6` varchar(255) DEFAULT NULL,
+  `unknow7` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3874 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `xj_anchor_data` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
