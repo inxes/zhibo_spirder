@@ -345,6 +345,10 @@ class Xj_anchor_dataPipeline(object):
                 sql_str += i
             sql = "INSERT INTO xj_anchor_data (anchor_id,weibo_fans,tieba_fans,followers,quotient,date,add_time,update_time,category_id) VALUES %s" % sql_str
             sql_result = sql.rstrip(',')
+
+
+
+
             self.cursor.execute(sql_result)
 
     def insert_db(self, cursor, item):
@@ -539,6 +543,7 @@ class Xj_view_livePipeline(object):
                 sql_str += i
             sql = "INSERT INTO xj_anchor_live VALUES %s" % sql_str
             sql_result = sql.rstrip(',')
+            logging.error("直播人数的最终sql:{}".format(sql_result))
             self.cursor.execute(sql_result)
 
     def update_end_time(self, cursor, item):
